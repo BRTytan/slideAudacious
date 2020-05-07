@@ -26,7 +26,7 @@ public class telaPrincipal extends javax.swing.JFrame {
         jPanelLogo = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jPaneBotoes = new javax.swing.JPanel();
-        btPlay1 = new javax.swing.JButton();
+        btnEntrar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(600, 600));
@@ -56,17 +56,10 @@ public class telaPrincipal extends javax.swing.JFrame {
         jPaneBotoes.setMaximumSize(new java.awt.Dimension(300, 300));
         jPaneBotoes.setPreferredSize(new java.awt.Dimension(300, 300));
 
-        btPlay1.setContentAreaFilled(false);
-        btPlay1.setBorderPainted(false);
-        btPlay1.setBackground(new java.awt.Color(0, 0, 0));
-        btPlay1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/png/064-play button.png"))); // NOI18N
-        btPlay1.setFocusPainted(false);
-        btPlay1.setMaximumSize(new java.awt.Dimension(50, 50));
-        btPlay1.setMinimumSize(new java.awt.Dimension(50, 50));
-        btPlay1.setPreferredSize(new java.awt.Dimension(50, 50));
-        btPlay1.addActionListener(new java.awt.event.ActionListener() {
+        btnEntrar.setText("jButton1");
+        btnEntrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btPlay1ActionPerformed(evt);
+                btnEntrarActionPerformed(evt);
             }
         });
 
@@ -76,15 +69,15 @@ public class telaPrincipal extends javax.swing.JFrame {
             jPaneBotoesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPaneBotoesLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btPlay1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(274, 274, 274))
+                .addComponent(btnEntrar)
+                .addGap(259, 259, 259))
         );
         jPaneBotoesLayout.setVerticalGroup(
             jPaneBotoesLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPaneBotoesLayout.createSequentialGroup()
-                .addGap(63, 63, 63)
-                .addComponent(btPlay1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(67, Short.MAX_VALUE))
+                .addGap(73, 73, 73)
+                .addComponent(btnEntrar)
+                .addContainerGap(84, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -107,15 +100,15 @@ public class telaPrincipal extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btPlay1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btPlay1ActionPerformed
-           new telaCadastro().setVisible(true);
-           dispose();
-           
-    }//GEN-LAST:event_btPlay1ActionPerformed
+    private void btnEntrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEntrarActionPerformed
+        // TODO add your handling code here:
+        new telaLogin().setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btnEntrarActionPerformed
 
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btPlay1;
+    private javax.swing.JButton btnEntrar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPaneBotoes;
     private javax.swing.JPanel jPanelLogo;
