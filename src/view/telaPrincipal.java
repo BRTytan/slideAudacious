@@ -105,7 +105,10 @@ public class telaPrincipal extends javax.swing.JFrame {
         new telaLogin().setVisible(true);
         dispose();
     }//GEN-LAST:event_btnEntrarActionPerformed
-
+    public void cliente(){
+        telaCadastro cliente1 = new telaCadastro();
+        System.out.println(cliente1);
+    }
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnEntrar;
