@@ -98,7 +98,8 @@ public class telaLogin extends javax.swing.JFrame {
 
     private void btnEntrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEntrarActionPerformed
         // TODO add your handling code here:
-        if(txtPassword.getText().equals("1234") && (txtLogin.getText().equals("fe-santos00"))){
+        telaCadastro cliente1 = new telaCadastro();
+        if(txtPassword.getPassword().equals("1234") && (txtLogin.getText().equals("fe-santos00"))){
             JOptionPane.showMessageDialog(null, "Login confirmado");
             
             
