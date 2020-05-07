@@ -113,6 +113,7 @@ public class telaPrincipal extends javax.swing.JFrame {
 
     private void btPlay1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btPlay1ActionPerformed
            new telaLogin().setVisble(true);
+           // novo teste
            
     }//GEN-LAST:event_btPlay1ActionPerformed
 
