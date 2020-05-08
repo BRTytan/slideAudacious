@@ -1,6 +1,6 @@
 package view;
-public class telaPrincipal extends javax.swing.JFrame {
-    public telaPrincipal() {
+public class TelaPrincipal extends javax.swing.JFrame {
+    public TelaPrincipal() {
         initComponents();
     }
     public static void main(String args[]) {
@@ -12,10 +12,10 @@ public class telaPrincipal extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(telaPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TelaPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         java.awt.EventQueue.invokeLater(() -> {
-            new telaPrincipal().setVisible(true);
+            new TelaPrincipal().setVisible(true);
         });
     }
 
@@ -29,8 +29,6 @@ public class telaPrincipal extends javax.swing.JFrame {
         btnEntrar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMaximumSize(new java.awt.Dimension(600, 600));
-        setPreferredSize(new java.awt.Dimension(600, 600));
 
         jPanelLogo.setBackground(new java.awt.Color(0, 0, 255));
         jPanelLogo.setMaximumSize(new java.awt.Dimension(300, 300));
@@ -56,7 +54,7 @@ public class telaPrincipal extends javax.swing.JFrame {
         jPaneBotoes.setMaximumSize(new java.awt.Dimension(300, 300));
         jPaneBotoes.setPreferredSize(new java.awt.Dimension(300, 300));
 
-        btnEntrar.setText("jButton1");
+        btnEntrar.setText("Entrar");
         btnEntrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnEntrarActionPerformed(evt);
@@ -102,11 +100,11 @@ public class telaPrincipal extends javax.swing.JFrame {
 
     private void btnEntrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEntrarActionPerformed
         // TODO add your handling code here:
-        new telaLogin().setVisible(true);
+        new TelaGame().setVisible(true);
         dispose();
     }//GEN-LAST:event_btnEntrarActionPerformed
     public void cliente(){
-        telaCadastro cliente1 = new telaCadastro();
+        TelaCadastro cliente1 = new TelaCadastro();
         System.out.println(cliente1);
     }
     

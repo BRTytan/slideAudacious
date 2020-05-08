@@ -11,12 +11,12 @@ import javax.swing.JOptionPane;
  *
  * @author Thais
  */
-public class telaLogin extends javax.swing.JFrame {
+public class TelaLogin extends javax.swing.JFrame {
 
     /**
      * Creates new form telaLogin
      */
-    public telaLogin() {
+    public TelaLogin() {
         initComponents();
     }
 
@@ -98,14 +98,14 @@ public class telaLogin extends javax.swing.JFrame {
 
     private void btnEntrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEntrarActionPerformed
         // TODO add your handling code here:
-        telaCadastro cliente1 = new telaCadastro();
+        TelaCadastro cliente1 = new TelaCadastro();
         if(txtPassword.getPassword().equals("1234") && (txtLogin.getText().equals("fe-santos00"))){
             JOptionPane.showMessageDialog(null, "Login confirmado");
             
             
         }else{
             JOptionPane.showMessageDialog(null, "acesso negado");
-            new telaCadastro().setVisible(true);
+            new TelaCadastro().setVisible(true);
             dispose();
         }
     }//GEN-LAST:event_btnEntrarActionPerformed
@@ -127,20 +127,21 @@ public class telaLogin extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(telaLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TelaLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(telaLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TelaLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(telaLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TelaLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(telaLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(TelaLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new telaLogin().setVisible(true);
+                new TelaLogin().setVisible(true);
             }
         });
     }
