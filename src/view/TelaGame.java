@@ -192,7 +192,7 @@ public class TelaGame extends javax.swing.JFrame {
             if (x < 100){
                 x ++;
                 System.out.println(i);
-                //lblTexto.setText(String.valueOf(i));
+                lblCount.setText(String.valueOf(i));
             }else{
                 break;
             }
